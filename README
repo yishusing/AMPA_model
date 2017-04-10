@@ -4,4 +4,7 @@ Right now, this model is in the early stages of building up the reaction network
 
 Version History:
 
-v1: Added in mGluR signalling courtesy of Bhalla & Iyengar (1999) http://science.sciencemag.org/content/283/5400/381. Testing 
+v1: Added in mGluR signalling courtesy of Bhalla & Iyengar (1999) http://science.sciencemag.org/content/283/5400/381.
+
+v1.1: Added CaMKII autophosphorylation to model, as in Hayer & Bhalla (2005), model 5. Adjusted PP1-active parameter to allow for close approx
+      to both sub-models output.
