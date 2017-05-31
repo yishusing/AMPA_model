@@ -8,3 +8,9 @@ v1: Added in mGluR signalling courtesy of Bhalla & Iyengar (1999) http://science
 
 v1.1: Added CaMKII autophosphorylation to model, as in Hayer & Bhalla (2005), model 5. Adjusted PP1-active parameter to allow for close approx
       to both sub-models output.
+      
+v1.4: All reactions converted to irreversible.
+
+v1.4.3: Changed some incorrect reaction rates in mTOR component.
+
+v1.4.4: Adjusted all compartment sizes for species with issues being entered into geometry. Now all equal 9e-17.
