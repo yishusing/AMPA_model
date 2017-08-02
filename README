@@ -4,13 +4,43 @@ Right now, this model is in the early stages of building up the reaction network
 
 Version History:
 
-v1: Added in mGluR signalling courtesy of Bhalla & Iyengar (1999) http://science.sciencemag.org/content/283/5400/381.
+v 1: Added in mGluR signalling courtesy of Bhalla & Iyengar (1999) http://science.sciencemag.org/content/283/5400/381.
 
-v1.1: Added CaMKII autophosphorylation to model, as in Hayer & Bhalla (2005), model 5. Adjusted PP1-active parameter to allow for close approx
+v 1.1: Added CaMKII autophosphorylation to model, as in Hayer & Bhalla (2005), model 5. Adjusted PP1-active parameter to allow for close approx
       to both sub-models output.
       
-v1.4: All reactions converted to irreversible.
+v 1.4: All reactions converted to irreversible.
 
-v1.4.3: Changed some incorrect reaction rates in mTOR component.
+v 1.4.3: Changed some incorrect reaction rates in mTOR component.
 
-v1.4.4: Adjusted all compartment sizes for species with issues being entered into geometry. Now all equal 9e-17.
+v 1.4.4: Adjusted all compartment sizes for species with issues being entered into geometry. Now all equal 9e-17.
+
+v 1.5 Added Rao Padala (2017) model of Wnt signalling pathway; changed name of model to AMPAR Metabolic Pathway Simulator (AMPS)
+      ; Changed versioning number system.
+
+v 1.51 Altered reaction concs, fixed minor issues
+
+v 1.52 Removed some breakdown reactions (e.g bcat breakdown)
+
+v 1.53 Readjusted EGFR components from Rao Padala model to fit with AMPS nomenclature
+
+v 1.54 Fixed crash at 600s- caused by 2 assignments triggering simultaneously with no change
+
+v 1.56 Tested LTP and LTD protocols; COPASI upgraded to 4.19; Ran paramter scans for Ca sensitivity
+
+v 1.57 Minor changes
+
+v 1.58 issues with c-raf reactions- split into Mglur model and Rao Padala model (separate pools). Adjusted craf reaction
+       parameters
+
+v 1.6 Converted all MAPK values to Jain 2009 values (previously I&B (1999)). Deleted Jain (2009) compartments which had no rationale
+      in published paper (all species affected subsumed into geometry). Slows down simulation initialisation.
+
+v 1.7 Altered reaction equations to resolve "default_compartment/=geometry" issue. Changed Grb2 bind sos, GEF/GAP_act_ras values to
+      Jain (2009). Changed old multi-compartment reactions to be divided by geometry.
+
+v 1.71 Fixed GEF issues. Fixed some parameters.
+
+v 1.72 Converted Rao Padala reactions to suit AMPS reaction nomenclature. Fixed negative concentrations.
+
+v 1.73 Changed compartment names
